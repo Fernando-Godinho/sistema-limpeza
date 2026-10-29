@@ -159,13 +159,31 @@ pertencer ao usuário `1000:1000` — é esse o usuário com que o sistema roda.
    celular não libera a câmera, e sem câmera não dá para concluir serviço. O acesso também precisa ser
    por HTTPS para a pessoa continuar conectada: em produção o cookie de sessão só é aceito em conexão
    segura.
-5. Em **Mounts**, crie um volume e monte em **`/app/data`**. Sem esse volume, cada deploy começa com
-   banco vazio e as fotos somem.
+5. Em **Mounts**, clique em **Add Mount** e preencha: **Type** `Volume`, **Name** `limpeza-dados`,
+   **Mount Path** `/app/data`. Sem esse volume, cada deploy começa com banco vazio e as fotos somem.
 6. Em **Environment**, defina `SESSION_SECRET` (uma frase longa e aleatória). As outras variáveis são
    opcionais.
 7. Faça o deploy e veja o log: os PINs iniciais aparecem ali na primeira subida.
 
 Cada deploy novo mantém o volume, ou seja, pessoas, presenças, serviços e fotos continuam de pé.
+
+**Como saber se o volume pegou.** A primeira subida mostra `pessoas cadastradas: 0` e importa a base.
+Da segunda em diante, o log traz `Base de colaboradores ja esta no banco (208 pessoas). Nada a importar.`
+— sinal de que o banco veio do disco que ficou salvo. Na dúvida, marque uma presença em **Equipe de
+hoje**, faça um redeploy e veja se ela continua lá.
+
+**Atualizar o sistema.** É só enviar o código para o GitHub e clicar em **Deploy**. O que está no
+volume não é tocado; o que mudou no cadastro continua valendo.
+
+**Backup.** Banco e fotos são dois itens numa pasta só. Por SSH no servidor:
+
+```bash
+docker volume ls   # descubra o nome do volume que a Easypanel criou
+docker run --rm -v NOME_DO_VOLUME:/data -v "$PWD":/backup alpine \
+  tar -czf /backup/limpeza-$(date +%F).tgz -C /data .
+```
+
+O arquivo `.tgz` fica na pasta em que o comando foi rodado, com o banco e as fotos dentro.
 
 ---
 
