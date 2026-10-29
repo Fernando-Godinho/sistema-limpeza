@@ -1,0 +1,19 @@
+node_modules/
+.next/
+out/
+build/
+next-env.d.ts
+*.tsbuildinfo
+
+.env.local
+.env*.local
+
+prisma/dev.db
+prisma/dev.db-journal
+storage/
+
+# Segredos locais (o modelo esta em .env.example).
+.env
+
+# Pasta de skills (tem repositorio proprio; nao faz parte do sistema).
+skills/

@@ -1,0 +1,203 @@
+// Modelo de dados do sistema de limpeza.
+//
+// Observacao: o SQLite nao aceita enums do Prisma, por isso os campos de
+// estado (papel do usuario, situacao do servico, motivo de ausencia) sao
+// textos. Os valores validos ficam centralizados em src/lib/domain.ts.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+/// Pessoa que entra no sistema: gestor, lider ou colaborador.
+model User {
+  id            String   @id @default(cuid())
+  name          String
+  /// ADMIN | LEADER | WORKER
+  role          String
+  /// PIN de acesso (hash scrypt). Nulo significa que a pessoa nao entra no sistema.
+  pinHash       String?
+  /// Idioma preferido da pessoa ("pt-BR", "es", "en").
+  locale        String?
+  /// Foto do rosto ajuda quem tem dificuldade de leitura a se reconhecer na lista.
+  avatarPhotoId String?
+  active        Boolean  @default(true)
+  /// Matricula na empresa, quando a pessoa veio da base de colaboradores.
+  employeeCode  String?
+  /// Cargo como a empresa escreve ("AUXILIAR DE SERVICOS GERAIS").
+  jobTitle      String?
+  /// Horario de trabalho como veio da planilha ("06:00 - 14:20").
+  workSchedule  String?
+  /// Turno de trabalho: MORNING | AFTERNOON | NIGHT. Define de quem e a equipe.
+  shift         String?
+  /// Lider responsavel pela pessoa. Nulo significa que ainda nao tem lider.
+  leaderId      String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  leader            User?             @relation("team", fields: [leaderId], references: [id], onDelete: SetNull)
+  team              User[]            @relation("team")
+  avatarPhoto       Photo?            @relation("avatar", fields: [avatarPhotoId], references: [id], onDelete: SetNull)
+  services          Assignment[]      @relation("worker")
+  createdServices   Assignment[]      @relation("creator")
+  attendances       Attendance[]      @relation("attendanceUser")
+  markedAttendances Attendance[]      @relation("attendanceMarker")
+  photos            Photo[]           @relation("uploader")
+  events            AssignmentEvent[]
+  occurrences       Occurrence[]
+
+  @@index([role, active])
+  @@index([leaderId, active])
+  // A planilha repete duas matriculas para pessoas diferentes, entao a
+  // identidade de quem veio de fora e a matricula junto com o nome.
+  @@unique([employeeCode, name])
+}
+
+/// Local onde o servico acontece.
+model Location {
+  id        String   @id @default(cuid())
+  name      String
+  address   String?
+  notes     String?
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  services Assignment[]
+
+  @@index([active])
+}
+
+/// Tipo de tarefa do catalogo (ex.: "Limpeza de banheiros").
+///
+/// Nao existe configuracao de foto aqui: todo servico pede a foto do servico
+/// pronto para ser concluido, e o lider tira essa foto pelo aplicativo.
+model TaskType {
+  id        String   @id @default(cuid())
+  name      String
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  services Assignment[]
+
+  @@index([active])
+}
+
+/// Servico: uma tarefa em um local, feita por um colaborador em um dia.
+model Assignment {
+  id           String    @id @default(cuid())
+  /// Dia do servico no formato AAAA-MM-DD.
+  date         String
+  locationId   String
+  taskTypeId   String
+  workerId     String
+  createdById  String?
+  /// PENDING | IN_PROGRESS | DONE | CANCELED
+  status       String    @default("PENDING")
+  startedAt    DateTime?
+  completedAt  DateTime?
+  canceledAt   DateTime?
+  cancelReason String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  location    Location          @relation(fields: [locationId], references: [id])
+  taskType    TaskType          @relation(fields: [taskTypeId], references: [id])
+  worker      User              @relation("worker", fields: [workerId], references: [id])
+  createdBy   User?             @relation("creator", fields: [createdById], references: [id], onDelete: SetNull)
+  photos      Photo[]
+  events      AssignmentEvent[]
+  occurrences Occurrence[]
+
+  @@index([date, status])
+  @@index([date, workerId])
+}
+
+/// Foto tirada pelo aplicativo.
+model Photo {
+  id           String   @id @default(cuid())
+  /// START | END | OCCURRENCE | AVATAR
+  kind         String
+  fileName     String
+  mimeType     String
+  size         Int
+  width        Int?
+  height       Int?
+  assignmentId String?
+  uploadedById String?
+  createdAt    DateTime @default(now())
+
+  assignment  Assignment?       @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  uploadedBy  User?             @relation("uploader", fields: [uploadedById], references: [id], onDelete: SetNull)
+  avatarOf    User[]            @relation("avatar")
+  occurrences Occurrence[]
+
+  @@index([assignmentId, kind])
+}
+
+/// Presenca do colaborador no dia.
+model Attendance {
+  id         String   @id @default(cuid())
+  date       String
+  userId     String
+  /// PRESENT | ABSENT
+  status     String
+  /// Motivo da ausencia: VACATION | SICK | JUSTIFIED | DAY_OFF | OTHER
+  reasonCode String?
+  note       String?
+  markedById String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user     User  @relation("attendanceUser", fields: [userId], references: [id], onDelete: Cascade)
+  markedBy User? @relation("attendanceMarker", fields: [markedById], references: [id], onDelete: SetNull)
+
+  @@unique([date, userId])
+  @@index([date])
+}
+
+/// Historico do que aconteceu com o servico (quem iniciou, quem concluiu...).
+model AssignmentEvent {
+  id           String   @id @default(cuid())
+  assignmentId String
+  /// CREATED | REASSIGNED | STARTED | PHOTO_ADDED | COMPLETED | CANCELED
+  type         String
+  meta         String?
+  byId         String?
+  createdAt    DateTime @default(now())
+
+  assignment Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  by         User?      @relation(fields: [byId], references: [id], onDelete: SetNull)
+
+  @@index([assignmentId, createdAt])
+}
+
+/// Problema avisado pelo colaborador durante o servico.
+model Occurrence {
+  id           String   @id @default(cuid())
+  assignmentId String?
+  byId         String?
+  /// MISSING_SUPPLIES | BROKEN_EQUIPMENT | NO_ACCESS | EXTRA_WORK | OTHER
+  reasonCode   String
+  note         String?
+  photoId      String?
+  createdAt    DateTime @default(now())
+
+  assignment Assignment? @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  by         User?       @relation(fields: [byId], references: [id], onDelete: SetNull)
+  photo      Photo?      @relation(fields: [photoId], references: [id], onDelete: SetNull)
+
+  @@index([createdAt])
+}
+
+/// Configuracoes gerais do sistema.
+model AppSetting {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+}

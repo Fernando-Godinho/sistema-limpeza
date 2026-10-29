@@ -1,0 +1,1670 @@
+{
+  "fonte": "SRA - Documentacao e Funcionais (planilha de colaboradores da empresa)",
+  "geradoEm": "2026-10-28",
+  "pessoas": [
+    {
+      "matricula": "108377",
+      "nome": "Fernando Godinho Alves",
+      "funcao": "SUPERVISOR ADMINISTRATIVO",
+      "horario": "08:00 AS 16:20",
+      "turno": "MORNING",
+      "papel": "ADMIN"
+    },
+    {
+      "matricula": "130991",
+      "nome": "Andrielly Garcia Guerreiro",
+      "funcao": "SUPERVISOR DE LIMPEZA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "LEADER"
+    },
+    {
+      "matricula": "601153",
+      "nome": "Gabriele Cristina dos Santos",
+      "funcao": "SUPERVISOR DE LIMPEZA",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "LEADER"
+    },
+    {
+      "matricula": "170853",
+      "nome": "Kelly Mariane de Souza Graffee",
+      "funcao": "SUPERVISOR DE LIMPEZA",
+      "horario": "22:00 - 06:20",
+      "turno": "NIGHT",
+      "papel": "LEADER"
+    },
+    {
+      "matricula": "101878",
+      "nome": "Alex Ferminio de Souza",
+      "funcao": "OPERADOR DE MAQUINA",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108607",
+      "nome": "Ana Nozaida Sosa Gonzalez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "07:00 AS 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "008114",
+      "nome": "Ana Paula Pereira Barbosa",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "07:00 - 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "301280",
+      "nome": "Andre dos Santos Cardoso",
+      "funcao": "AJUDANTE DE SERVICOS GERAIS- BANHEIRISTA",
+      "horario": "07:00 AS 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "104804",
+      "nome": "Angela Lopes Avila",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170852",
+      "nome": "Ariele da Silva Borges",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170860",
+      "nome": "Beatriz Barassi da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108970",
+      "nome": "Camila Silva da Rosa",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "807119",
+      "nome": "Cassio Foletto",
+      "funcao": "ENCARREGADO DE LIMPEZA",
+      "horario": "09:00 AS 21:00",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108957",
+      "nome": "Catia Regina de Brito Alves",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "106424",
+      "nome": "Catia Rosane Lopes de Lima",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130459",
+      "nome": "Claudiomiro Kruger",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "07:00 - 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170861",
+      "nome": "Cristina de Fatima Silva de Moura",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 - 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130997",
+      "nome": "Daiane Ferreira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "131013",
+      "nome": "Darlene Ulysse",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 - 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "133765",
+      "nome": "Denise Alves dos Santos Port",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "07:00 AS 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130998",
+      "nome": "Deyalith Del Valle Rojas Munoz",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130975",
+      "nome": "Dorval Reni Fontoura de Oliveira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "030310",
+      "nome": "Edgar Jose Rodriguez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "101485",
+      "nome": "Edna Charles",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "808222",
+      "nome": "Eliandro Leao de Souza Junior",
+      "funcao": "LIDER DE LIMPEZA",
+      "horario": "07:00 AS 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108647",
+      "nome": "Flavio Augusto Goulart Correa",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "103810",
+      "nome": "Francieli Soares Ignacio de Paula",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 06:20 AS 14:40 H",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "147874",
+      "nome": "Gisiele Batista Guimaraes",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "131011",
+      "nome": "Henrry Daniel Rodriguez Diaz",
+      "funcao": "OPERADOR DE MAQUINA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108783",
+      "nome": "Isadora Blanco Garcia",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "030329",
+      "nome": "Joao Luis Rodrigues",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "106333",
+      "nome": "Joao Marcelo Telles",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06;20  AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "030330",
+      "nome": "Jonathan Ventura Ramos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "217313",
+      "nome": "Jonia Vital",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "030333",
+      "nome": "Jose Benito Quintana Mendez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "089137",
+      "nome": "Jose Hernan Galan Rivero",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "09:00 as 21:00",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108759",
+      "nome": "Jose Valdeci de Campos Cabral",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170863",
+      "nome": "Juan Jose Salazar Lopez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130996",
+      "nome": "Julio Cesar Guzman Jaramillo",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 - 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "295326",
+      "nome": "Katielle Milinaly Teodoro Almeida",
+      "funcao": "AJUDANTE DE SERVICOS GERAIS",
+      "horario": "08:00 -- 18:00",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "106687",
+      "nome": "Larissa Ferreira Lacerda",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "131012",
+      "nome": "Leonardo da Silva Mendes",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "552025",
+      "nome": "Marcelo de Almeida Castilhos",
+      "funcao": "AJUDANTE DE SERVICOS GERAIS- BANHEIRISTA",
+      "horario": "07:00/15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "101142",
+      "nome": "Marie Kethia Joachim",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "106370",
+      "nome": "Maristela Mantai dos Santos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "07:00 AS 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108371",
+      "nome": "Naiara Silva de Lima Schwan",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "07:00 AS 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "106571",
+      "nome": "Natieli Leonardo Cardoso",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170869",
+      "nome": "Neida Margarita Guiche",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000961",
+      "nome": "Neivaldo Nogueira Forlan",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "102277",
+      "nome": "Neudys Jesus Rodrigues Alvarez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000965",
+      "nome": "Obdalis Coromoto Ugas Caraballo",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000986",
+      "nome": "Potiguara Leao da Silva",
+      "funcao": "LIDER DE LIMPEZA",
+      "horario": "07:00/19:00",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "998099",
+      "nome": "Renata Vignol Nunes",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 AS 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "124618",
+      "nome": "Renato Nascimento Santos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:00 AS 18:00",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "161229",
+      "nome": "Rosane Detogni Martins",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "09:00/17:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "208745",
+      "nome": "Rosangela Gularte Martins",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "07:00 AS 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "745814",
+      "nome": "Roseli de Vargas Pereira",
+      "funcao": "AJUDANTE DE SERVICOS GERAIS- BANHEIRISTA",
+      "horario": "07:00 as 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "030319",
+      "nome": "Ruben Eduardo Pinto Carruyo",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "103078",
+      "nome": "Sandy James Angervil",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 as 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000981",
+      "nome": "Scheila Lasalete Brazeiro Vargas",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "07:00/15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "131016",
+      "nome": "Shaiane Costa de Oliveira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "149972",
+      "nome": "Simone Ribeiro Moreira Flores",
+      "funcao": "AJUDANTE DE SERVICOS GERAIS- BANHEIRISTA",
+      "horario": "07:00/15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "600276",
+      "nome": "Stephany Pas Ferreira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:20 - 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170866",
+      "nome": "Tainara Trinidade Pacheco",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "146931",
+      "nome": "Veronica Nair Maurer",
+      "funcao": "AJUDANTE DE SERVICOS GERAIS- BANHEIRISTA",
+      "horario": "09:00/17:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "131021",
+      "nome": "Wagner dos Santos Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:40 - 14:40",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130918",
+      "nome": "Wilson Telancy",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "07:00 - 15:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000967",
+      "nome": "Yeraldin de Los Angeles Rodriguez Martinez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000969",
+      "nome": "Yudelkys Del Valle Marquez Hernandez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "06:00 - 14:20",
+      "turno": "MORNING",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "102698",
+      "nome": "Adriana Helena Almeida da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "138578",
+      "nome": "Aires Macedo Pereira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "993731",
+      "nome": "Alvaro Javier Silveira Casanova",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:20 AS 22:40",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108607",
+      "nome": "Amanda de Bona Sartor Moreira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "152420",
+      "nome": "Ana Carolina Dornelles do Nascimento",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "600275",
+      "nome": "Ana Vitoria Fernandes Goncalves",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "126754",
+      "nome": "Andressa Cardoso",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170871",
+      "nome": "Andrieli de Campos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "030326",
+      "nome": "Angela Elair dos Santos Bittencourt",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "118780",
+      "nome": "Aristides da Silva Nunes",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "106145",
+      "nome": "Betty Del Carmen Diaz",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108894",
+      "nome": "Bruna Cabral da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "12:00 AS 20:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "981999",
+      "nome": "Bruna da Silveira Machado",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "542369",
+      "nome": "Caique Ferreira da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "103829",
+      "nome": "Carine da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "251544",
+      "nome": "Carlos Antonio Rodrigues Figueira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:40 AS 23:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "107850",
+      "nome": "Caroline Guites Sanchez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "601152",
+      "nome": "Claudia Elisa Fagundes Correa",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "601142",
+      "nome": "Clenir Rodrigues Braga",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "106964",
+      "nome": "Daiciane Cristina Garcia Nunes",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "106106",
+      "nome": "Dalva Vanessa Rosa da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 14:00 AS 22:20 H",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "089258",
+      "nome": "Deise Silvia de Souza",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "990719",
+      "nome": "Deisi da Silva Cezar",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:40 AS 23:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "503667",
+      "nome": "Dixon Jose Garcias Garcias",
+      "funcao": "SUPERVISOR DE LIMPEZA",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "106574",
+      "nome": "Edna Maria Soares Rodrigues",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 10:00 AS 18:20 H",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "005228",
+      "nome": "Eliane Janete Essy",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "10:00 as 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170843",
+      "nome": "Elis Regina Fagundes dos Santos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "104204",
+      "nome": "Eloisa Rosa da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:40 AS 23:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "100602",
+      "nome": "Erick Lima de Araujo",
+      "funcao": "ENCARREGADO DE LIMPEZA",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170874",
+      "nome": "Esterlie Medoit",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "998111",
+      "nome": "Everton Luis Silva de Lima",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "104745",
+      "nome": "Everton Moura dos Santos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:40 AS 23:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "136528",
+      "nome": "Fabiana Duarte Dornelles",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170858",
+      "nome": "Fafane Juste",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000834",
+      "nome": "Fanel Virgile",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:20 AS 22:40",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "601167",
+      "nome": "Franciele dos Santos Soares",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "991564",
+      "nome": "Gabriel Foletto",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "928960",
+      "nome": "Gabriel da Silva Gularte",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "104810",
+      "nome": "Genese Parisien",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 14:00 AS 22:20 H",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "684185",
+      "nome": "Geovane Vargas Honorio",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "104204",
+      "nome": "Glaci dos Santos Nascimento",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "973058",
+      "nome": "Graziely Oliveira Pena",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "827463",
+      "nome": "Humberto Jesus Rivero Lorenzana",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 as 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "105784",
+      "nome": "Irwin Jose Ventura Gutierrez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130970",
+      "nome": "Iur Regines Herzog Nunes",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108110",
+      "nome": "Ivanilda Ferreira Martins",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:40 AS 23:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "156987",
+      "nome": "Jader Nascimento da Silva",
+      "funcao": "LIDER DE LIMPEZA",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "178478",
+      "nome": "Janete dos Santos Rodrigues",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "12:00 AS 20:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130468",
+      "nome": "Jessica Cardoso Nascimento",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 - 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "105081",
+      "nome": "Joel da Silva Carvalho",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "990587",
+      "nome": "Jonatas Fortunato Rodrigues Prusch",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130972",
+      "nome": "Jonathan Williams Brizola da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "104450",
+      "nome": "Jones da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 14:00 AS 22:20 H",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000960",
+      "nome": "Jose Eduardo Soares Alves",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 - 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "104787",
+      "nome": "Jose Marcelo Correa Lopes",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "101048",
+      "nome": "Juliana Colares Marques",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 14:00 AS 22:20 H",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "008826",
+      "nome": "Juliane Pinheiro dos Santos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 - 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "997312",
+      "nome": "Juraci Fatima Albano",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "401866",
+      "nome": "Jurema Lopes dos Santos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130999",
+      "nome": "Karlena Del Valle Reyes Rivas",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130992",
+      "nome": "Kathrein Esteves dos Santos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "131010",
+      "nome": "Kerbyslade Silrais",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "089906",
+      "nome": "Lazaro Gonzalez Gonzalez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "985207",
+      "nome": "Leticia Saraiva Alves",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "105236",
+      "nome": "Losiane Jocimara da Rosa",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "104769",
+      "nome": "Lucelia Guedes Soares",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 14:00 AS 22:20 H",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "998109",
+      "nome": "Luciana Santana de Oliveira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "118867",
+      "nome": "Lucio Barbosa Batista",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "601168",
+      "nome": "Luis Enrique Paracuto Perez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "107774",
+      "nome": "Marcia Carvalho da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "13:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130857",
+      "nome": "Margarette Occean Fontilme",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "004628",
+      "nome": "Maria Angelica Nunes",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:40 AS 23:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "103856",
+      "nome": "Marie Loudie Richeme",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130620",
+      "nome": "Marielis Johanny Quintero Lugo",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "10:00 - 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "648760",
+      "nome": "Marinez Ferreira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "11:00 AS 19:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "998113",
+      "nome": "Mateus Wagner Garcia Satorio",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "105478",
+      "nome": "Michely Santos da Luz",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "998763",
+      "nome": "Milena Souza da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "102578",
+      "nome": "Nadege Guillaume Julien",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130957",
+      "nome": "Nathan dos Santos Alves",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "10:00 - 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130380",
+      "nome": "Nicimar Maciel Alves",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 - 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "004360",
+      "nome": "Nilson de Camargo",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "10:00 - 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "103623",
+      "nome": "Oscar dos Santos Souza",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "170859",
+      "nome": "Pedro Jose Rivas",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "003688",
+      "nome": "Raquel Porte da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "11:00/19:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "189313",
+      "nome": "Roberto Carlos dos Santos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000962",
+      "nome": "Rodrigo Barreiros Neves Junior",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "217193",
+      "nome": "Ronaldo Marques da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130783",
+      "nome": "Rosa Souza Viana",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "11:00 - 19:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130785",
+      "nome": "Rosana Almeida dos Santos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "10:00 - 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "240050",
+      "nome": "Rosanete da Rosa Mendes de Campos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000971",
+      "nome": "Rute de Jesus Antulino",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "14:00 - 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "089666",
+      "nome": "Samantha Teixeira Goncalves",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "10:00 AS 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "189905",
+      "nome": "Sheila Kern",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "12:00 AS 20:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "989124",
+      "nome": "Suzana Beatriz Lopes",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "105064",
+      "nome": "Taiane Elise de Oliveira Trindade",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 10:00 AS 22:00 H",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000778",
+      "nome": "Tassia Rodrigues de Quevedo",
+      "funcao": "LIDER DE LIMPEZA",
+      "horario": "14:20/22:40",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "130521",
+      "nome": "Tatiana de Cassia da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "10:00 - 22:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "875329",
+      "nome": "Welerson Iran Goulart Nunes",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:40",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "103857",
+      "nome": "Weslei dos Santos Leonardo",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "996319",
+      "nome": "Wiliam Antunes dos Santos",
+      "funcao": "LIDER DE LIMPEZA",
+      "horario": "14:40 AS 23:00",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "125255",
+      "nome": "Yordys Jose Ramos Susarret",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "14:00 AS 22:20",
+      "turno": "AFTERNOON",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108049",
+      "nome": "Adriano Barbosa Cardoso",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "089824",
+      "nome": "Adriano Domingos Rodrigues",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "103697",
+      "nome": "Alecsandro de Oliveira Moreira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000830",
+      "nome": "Amarildo Martins Borgmann",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "22:40/07:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "105308",
+      "nome": "Angelica Riffel",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 22:00 AS 06:20 H",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "104451",
+      "nome": "Bergena Beldor",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "105545",
+      "nome": "Camila Bertini do Prado",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 10:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "104104",
+      "nome": "Carine Cristiane Ramos Azevedo",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 22:00 AS 06:20 H",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "102523",
+      "nome": "Carlos Soares da Rosa",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 10:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "120369",
+      "nome": "Cleci Souza da Rosa",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 10:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "106271",
+      "nome": "Cristiano de Souza",
+      "funcao": "OPERADOR DE MAQUINA",
+      "horario": "22:00 AS 10:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "103083",
+      "nome": "Diego Souza de Oliveira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "554793",
+      "nome": "Eder da Silva de Azambuja",
+      "funcao": "ENCARREGADO DE LIMPEZA I",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "108752",
+      "nome": "Ederson Luis da Silva Ataides",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "133955",
+      "nome": "Eleazar Francisco Vicent",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "601163",
+      "nome": "Eleci Lorena Vaz",
+      "funcao": "OPERADOR DE MAQUINA",
+      "horario": "22:00 - 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "300985",
+      "nome": "Giovane Goncalves Saibro",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "926276",
+      "nome": "Heloisa Silva da Silveira",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 22:00 AS 06:20 H",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "601160",
+      "nome": "Iara Regina Correa",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 - 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "998122",
+      "nome": "Indianara Padilha de Souza",
+      "funcao": "OPERADOR DE MAQUINA",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "007745",
+      "nome": "Jackieny Del Carmen Bermudez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "22:00 - 10:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "089244",
+      "nome": "Jacques Frantzo Sylpha",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "326581",
+      "nome": "Janice Batista da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "105936",
+      "nome": "Jefferson da Silveira Goulart",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 10:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "030240",
+      "nome": "Juan Alberto Yendez Rodriguez",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 - 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "131019",
+      "nome": "Kelly Cristina Calazans Pinheiro da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 - 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "178457",
+      "nome": "Lazaro Omar Soares da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 10:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "089382",
+      "nome": "Magali Teresinha dos Santos Lima",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "19:00 AS 07:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "105310",
+      "nome": "Marcio Castro Corvelo",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "DAS 22:00 AS 06:20 H",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "030315",
+      "nome": "Mauricio Moraes Portella",
+      "funcao": "OPERADOR DE MAQUINA",
+      "horario": "22:00 - 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "600278",
+      "nome": "Osmin Spode Flores",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 - 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "163587",
+      "nome": "Robson Rosa da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 10:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "122512",
+      "nome": "Rosane Goncalves da Silva",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "601159",
+      "nome": "Sandra Lea da Conceicao Silveira",
+      "funcao": "LIDER DE LIMPEZA",
+      "horario": "22:00 - 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "368545",
+      "nome": "Suelen Lopes Fontana",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS",
+      "horario": "22:00 AS 06:20",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "122223",
+      "nome": "Tatiane Brito dos Santos",
+      "funcao": "AUXILIAR DE SERVICOS GERAIS BANHEIRISTA",
+      "horario": "22:00 AS 10:00",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    },
+    {
+      "matricula": "000989",
+      "nome": "Uilian Rodrigues da Silva",
+      "funcao": "ENCARREGADO DE LIMPEZA I",
+      "horario": "22:20 AS 06:40",
+      "turno": "NIGHT",
+      "papel": "WORKER"
+    }
+  ]
+}

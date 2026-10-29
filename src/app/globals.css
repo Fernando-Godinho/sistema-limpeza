@@ -1,0 +1,1362 @@
+/* =============================================================================
+   Sistema de Limpeza - folha de estilo unica
+
+   Regras que valem para tudo neste arquivo:
+
+   1. Letra grande. Texto de uso nunca abaixo de 18px; o corpo das telas fica
+      entre 18 e 22px.
+   2. Botao de acao com pelo menos 56px de altura e area de toque de 48x48px.
+   3. Contraste alto. As combinacoes de cor usadas aqui foram conferidas e
+      todas passam de 4.5:1 (a maioria passa de 7:1).
+   4. Movimento nunca explica uma acao. Se a pessoa reduzir movimento no
+      aparelho, nada se move.
+   5. Tudo em rem, para que aumentar a letra do navegador nao quebre o layout.
+   ============================================================================= */
+
+/* --- Medidas e cores -------------------------------------------------------- */
+
+:root {
+  color-scheme: light;
+
+  /* Letras */
+  --text-body: 1.25rem; /* 20px: padrao das instrucoes */
+  --text-small: 1.125rem; /* 18px: menor tamanho permitido */
+  --text-action: 1.375rem; /* 22px: botoes de acao */
+  --text-section: 1.5rem; /* 24px: titulo de secao */
+  --text-title: 1.75rem; /* 28px: titulo da tela */
+  --text-cheer: 2.25rem; /* 36px: a confirmacao de que salvou */
+
+  /* Toque e altura */
+  --touch-min: 3rem; /* 48px */
+  --action-height: 3.5rem; /* 56px */
+  --radius: 0.875rem;
+  --radius-card: 1rem;
+
+  /* Cores: texto e fundo */
+  --ink: #101a26; /* texto principal */
+  --ink-soft: #435063; /* texto de apoio */
+  --page: #eef2f7;
+  --surface: #ffffff;
+  --surface-soft: #f5f8fb;
+  --line: #b9c4d2; /* bordas */
+  --line-strong: #6f7d8f;
+
+  /* Cores: acoes. Sempre acompanhadas de palavra e icone. */
+  --brand: #14508f;
+  --brand-strong: #0d3b6b;
+  --brand-soft: #e3edf9;
+  --success: #0f6b3a;
+  --success-soft: #e2f4ea;
+  --warning: #8a4b00;
+  --warning-soft: #fdf1dd;
+  --danger: #a01c1c;
+  --danger-soft: #fbe9e9;
+  --neutral: #435063;
+  --neutral-soft: #e8ecf1;
+
+  --focus: #0b3d91;
+
+  /* Espacamento */
+  --gap-xs: 0.5rem;
+  --gap-sm: 0.75rem;
+  --gap: 1rem;
+  --gap-lg: 1.5rem;
+  --gap-xl: 2.25rem;
+
+  --content-max: 38rem;
+  --shadow-card: 0 1px 2px rgba(16, 26, 38, 0.08), 0 6px 16px rgba(16, 26, 38, 0.06);
+  --shadow-raised: 0 2px 4px rgba(16, 26, 38, 0.12), 0 12px 28px rgba(16, 26, 38, 0.14);
+
+  --speed: 140ms;
+}
+
+/* --- Base -------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* 100% para respeitar o tamanho de letra escolhido no aparelho. */
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--text-body);
+  font-weight: 500;
+  line-height: 1.55;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overscroll-behavior-y: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.25;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--brand-strong);
+  text-underline-offset: 0.2em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* --- Superficies do navegador ------------------------------------------------ */
+
+::selection {
+  background: var(--brand);
+  color: #ffffff;
+}
+
+input,
+textarea,
+select,
+button {
+  caret-color: var(--brand-strong);
+  font: inherit;
+}
+
+/*
+ * Anel de foco em duas camadas: uma faixa branca colada no elemento e uma
+ * faixa azul escura por fora. Assim o foco continua visivel tanto sobre um
+ * botao azul escuro quanto sobre o fundo claro da tela.
+ */
+:focus-visible {
+  outline: 0.25rem solid #ffffff;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.5rem var(--focus);
+}
+
+/* --- Detalhes que fazem o toque parecer nativo no celular -------------------- */
+
+/* O brilho cinza que o navegador pinta ao tocar nao combina com o nosso
+   retorno visual e, em tela grande, parece falha. */
+a,
+button,
+input,
+select,
+textarea,
+label,
+.choice {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* "touch-action: manipulation" tira o atraso de 300ms que o navegador espera
+   para ver se o toque vai virar duplo toque. O aperto de dois dedos para
+   ampliar continua funcionando. */
+.btn,
+.choice,
+.keypad__key,
+.language-picker__option,
+.tabs__tab {
+  touch-action: manipulation;
+}
+
+/* Encostar e segurar num botao nao deve abrir o menu de copiar texto. */
+.btn,
+.choice,
+.keypad__key,
+.language-picker__option,
+.tabs__tab,
+.status {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Link que so aparece quando alguem chega nele pelo teclado. */
+.skip-link {
+  position: absolute;
+  left: -100vw;
+  top: 0;
+  z-index: 60;
+}
+
+.skip-link:focus {
+  left: var(--gap);
+  top: var(--gap);
+  background: var(--surface);
+  border: 2px solid var(--brand-strong);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  color: var(--brand-strong);
+  font-weight: 700;
+}
+
+/* --- Estrutura da tela ------------------------------------------------------- */
+
+.shell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.shell__body {
+  flex: 1;
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--gap) var(--gap) var(--gap-xl);
+}
+
+.shell__body--wide {
+  max-width: 56rem;
+}
+
+.shell--with-nav .shell__body {
+  padding-bottom: 7rem;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--surface);
+  border-bottom: 2px solid var(--line);
+  padding-top: env(safe-area-inset-top);
+}
+
+.topbar__inner {
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--gap-sm) var(--gap);
+  display: flex;
+  align-items: center;
+  /* Em telas estreitas os botoes descem para uma segunda linha sozinhos,
+     em vez de apertar o nome da pessoa. */
+  flex-wrap: wrap;
+  gap: var(--gap-xs);
+}
+
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gap-xs);
+  margin-left: auto;
+}
+
+.shell__body--wide .topbar__inner,
+.topbar__inner--wide {
+  max-width: 56rem;
+}
+
+.topbar__person {
+  flex: 1 1 9rem;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+}
+
+.topbar__name {
+  font-weight: 700;
+  font-size: var(--text-small);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  font-weight: 700;
+  font-size: var(--text-section);
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: var(--surface);
+  border-top: 2px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.bottom-nav__inner {
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--gap-xs) var(--gap-sm);
+  display: flex;
+  gap: var(--gap-xs);
+}
+
+.bottom-nav__link {
+  flex: 1;
+  min-height: var(--action-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: var(--text-small);
+  font-weight: 700;
+  padding: 0.35rem;
+}
+
+.bottom-nav__link[aria-current="page"] {
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+}
+
+/* --- Cabecalho de tela ------------------------------------------------------- */
+
+.screen-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  margin-bottom: var(--gap-lg);
+}
+
+.screen-head__title {
+  font-size: var(--text-title);
+}
+
+.screen-head__subtitle {
+  font-size: var(--text-body);
+  color: var(--ink-soft);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-xs);
+  min-height: var(--touch-min);
+  padding: 0 var(--gap-sm) 0 0;
+  color: var(--brand-strong);
+  font-size: var(--text-small);
+  font-weight: 700;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+/* --- Botoes ------------------------------------------------------------------ */
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+  width: 100%;
+  min-height: var(--action-height);
+  padding: 0.75rem var(--gap);
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: var(--text-action);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--speed) ease, border-color var(--speed) ease;
+}
+
+.btn__icon {
+  flex-shrink: 0;
+}
+
+.btn--primary {
+  background: var(--brand);
+  border-color: var(--brand-strong);
+  color: #ffffff;
+}
+
+.btn--success {
+  background: var(--success);
+  border-color: var(--success);
+  color: #ffffff;
+}
+
+.btn--danger {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #ffffff;
+}
+
+.btn--secondary {
+  background: var(--surface);
+  border-color: var(--brand-strong);
+  color: var(--brand-strong);
+}
+
+.btn--quiet {
+  background: var(--surface);
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+
+.btn--link {
+  background: none;
+  border: 0;
+  color: var(--brand-strong);
+  text-decoration: underline;
+  min-height: var(--touch-min);
+  font-size: var(--text-small);
+}
+
+.btn--small {
+  min-height: var(--touch-min);
+  font-size: var(--text-small);
+  padding: 0.5rem var(--gap-sm);
+  width: auto;
+}
+
+.btn--inline {
+  width: auto;
+}
+
+.btn[aria-disabled="true"],
+.btn:disabled {
+  background: var(--neutral-soft);
+  border-color: var(--line-strong);
+  color: var(--ink-soft);
+  cursor: not-allowed;
+}
+
+.btn-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.btn-row {
+  display: flex;
+  gap: var(--gap-sm);
+  flex-wrap: wrap;
+}
+
+.btn-row > .btn {
+  flex: 1 1 12rem;
+}
+
+@media (hover: hover) {
+  .btn--primary:hover {
+    background: var(--brand-strong);
+  }
+
+  .btn--quiet:hover,
+  .btn--secondary:hover {
+    background: var(--brand-soft);
+  }
+
+  .btn--danger:hover {
+    background: #7d1515;
+  }
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* --- Cartoes ----------------------------------------------------------------- */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--gap-lg);
+}
+
+.card + .card {
+  margin-top: var(--gap);
+}
+
+.card__title {
+  font-size: var(--text-section);
+  margin-bottom: var(--gap-xs);
+}
+
+.card--tight {
+  padding: var(--gap);
+}
+
+/* Escolha grande e tocavel: lista de locais, tarefas e pessoas. */
+.choice {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  width: 100%;
+  min-height: 4.5rem;
+  padding: var(--gap) var(--gap-lg);
+  text-align: left;
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  color: var(--ink);
+  font-size: var(--text-action);
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color var(--speed) ease, background-color var(--speed) ease;
+}
+
+.choice__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.choice__hint {
+  display: block;
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.choice[aria-pressed="true"],
+.choice--chosen {
+  border-color: var(--brand-strong);
+  background: var(--brand-soft);
+}
+
+.choice__mark {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: var(--text-small);
+  font-weight: 700;
+  color: var(--brand-strong);
+}
+
+/* Cartao de acao principal: maior que os itens de lista comuns. */
+.choice--big {
+  min-height: 5.5rem;
+  padding: 1.25rem;
+}
+
+.choice-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+/* Duas opcoes do mesmo tamanho, sempre na mesma ordem. */
+.choice-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-sm);
+}
+
+.choice-pair--stack {
+  grid-template-columns: 1fr;
+}
+
+/* --- Selo de situacao -------------------------------------------------------- */
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: var(--text-small);
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.status--pending {
+  background: var(--neutral);
+}
+
+.status--in-progress {
+  background: var(--warning);
+}
+
+.status--done {
+  background: var(--success);
+}
+
+.status--canceled {
+  background: var(--ink-soft);
+}
+
+/* --- Passos ----------------------------------------------------------------- */
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  margin-bottom: var(--gap);
+}
+
+.steps__label {
+  font-size: var(--text-small);
+  font-weight: 700;
+  color: var(--brand-strong);
+}
+
+.steps__track {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.steps__dot {
+  height: 0.6rem;
+  flex: 1;
+  border-radius: 999px;
+  background: var(--line);
+}
+
+.steps__dot--done {
+  background: var(--brand);
+}
+
+.steps__dot--now {
+  background: var(--brand-strong);
+}
+
+/* --- Formularios ------------------------------------------------------------- */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  margin-bottom: var(--gap-lg);
+}
+
+.field__label {
+  font-size: var(--text-body);
+  font-weight: 700;
+}
+
+.field__hint {
+  font-size: var(--text-small);
+  color: var(--ink-soft);
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  min-height: var(--action-height);
+  padding: 0.7rem var(--gap);
+  border: 2px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  /* 22px: acima dos 16px que fazem o iPhone ampliar a tela sozinho. */
+  font-size: var(--text-action);
+}
+
+.textarea {
+  min-height: 6rem;
+  padding: var(--gap);
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  /* Cinza escuro o suficiente para passar de 4.5:1. */
+  color: #5c6a7d;
+  opacity: 1;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-sm);
+  min-height: var(--touch-min);
+  padding: var(--gap-sm) 0;
+  font-size: var(--text-body);
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  margin: 0;
+  accent-color: var(--brand);
+}
+
+.search-field {
+  position: relative;
+  margin-bottom: var(--gap);
+}
+
+.search-field .input {
+  padding-left: 3.5rem;
+  margin-top: var(--gap-xs);
+}
+
+.search-field__icon {
+  position: absolute;
+  left: var(--gap);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--ink-soft);
+  pointer-events: none;
+}
+
+/* --- Avisos e mensagens ------------------------------------------------------ */
+
+.alert {
+  display: flex;
+  gap: var(--gap-sm);
+  align-items: flex-start;
+  padding: var(--gap);
+  border: 2px solid var(--line-strong);
+  border-radius: var(--radius-card);
+  font-size: var(--text-body);
+  background: var(--surface);
+}
+
+.alert__body {
+  flex: 1;
+}
+
+.alert--warning {
+  background: var(--warning-soft);
+  border-color: var(--warning);
+  color: #5a3100;
+}
+
+.alert--danger {
+  background: var(--danger-soft);
+  border-color: var(--danger);
+  color: #7a1414;
+}
+
+.alert--success {
+  background: var(--success-soft);
+  border-color: var(--success);
+  color: #0a4b28;
+}
+
+.alert--info {
+  background: var(--brand-soft);
+  border-color: var(--brand-strong);
+  color: var(--brand-strong);
+}
+
+/* Aviso lido pelo leitor de tela, mas sem ocupar espaco na tela. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- Confirmacao grande ------------------------------------------------------ */
+
+.cheer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+  text-align: center;
+  padding: var(--gap-xl) var(--gap);
+}
+
+.cheer__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: var(--success);
+  color: #ffffff;
+}
+
+.cheer__mark--brand {
+  background: var(--brand);
+}
+
+.cheer__mark--warning {
+  background: var(--warning);
+}
+
+.cheer__title {
+  font-size: var(--text-cheer);
+  color: var(--success);
+}
+
+.cheer__title--ink {
+  color: var(--ink);
+}
+
+/* Os botoes da confirmacao ocupam a largura toda, como no resto do sistema. */
+.cheer .btn-stack {
+  width: 100%;
+}
+
+.cheer__text {
+  font-size: var(--text-body);
+  color: var(--ink);
+}
+
+/* --- Resumo antes de salvar -------------------------------------------------- */
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.summary__row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding-bottom: var(--gap-sm);
+  border-bottom: 1px solid var(--line);
+}
+
+.summary__row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.summary__label {
+  font-size: var(--text-small);
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.summary__value {
+  font-size: var(--text-section);
+  font-weight: 700;
+}
+
+.summary__sub {
+  display: block;
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.center-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Espacamentos pontuais, em um lugar so, em vez de estilo solto no JSX. */
+.mb {
+  margin-bottom: var(--gap);
+}
+
+.mt-sm {
+  margin-top: var(--gap-sm);
+}
+
+/* --- Listas ------------------------------------------------------------------ */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.list__heading {
+  font-size: var(--text-section);
+  margin: var(--gap-lg) 0 var(--gap-sm);
+}
+
+.list__heading:first-child {
+  margin-top: 0;
+}
+
+.person-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--gap-lg);
+}
+
+.person-row__head {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+}
+
+.person-row__name {
+  flex: 1;
+  font-size: var(--text-action);
+  font-weight: 700;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background: var(--brand-soft);
+  border: 2px solid var(--brand);
+  color: var(--brand-strong);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar--big {
+  width: 5.5rem;
+  height: 5.5rem;
+  font-size: 2rem;
+}
+
+/* --- Fotos ------------------------------------------------------------------- */
+
+.photo-frame {
+  border: 2px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface-soft);
+  overflow: hidden;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: auto;
+}
+
+.photo-frame__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-xs);
+  padding: var(--gap-xl) var(--gap);
+  color: var(--ink-soft);
+  text-align: center;
+  font-size: var(--text-small);
+}
+
+/* Titulo e dica de cada bloco de foto (inicio, fim). */
+.photo-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  margin-bottom: var(--gap-sm);
+}
+
+.photo-block__label {
+  font-size: var(--text-section);
+}
+
+.photo-block__hint {
+  font-size: var(--text-small);
+  color: var(--ink-soft);
+}
+
+.photo-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  margin-top: var(--gap);
+}
+
+.camera-stage {
+  position: relative;
+  background: #000000;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+}
+
+.camera-stage video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Secoes e utilitarios ---------------------------------------------------- */
+
+.section + .section {
+  margin-top: var(--gap-lg);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.stack--tight {
+  gap: var(--gap-sm);
+}
+
+.stack--loose {
+  gap: var(--gap-lg);
+}
+
+.stack--end {
+  align-items: flex-end;
+}
+
+.text-small {
+  font-size: var(--text-small);
+  color: var(--ink-soft);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.actions {
+  margin-top: var(--gap-lg);
+}
+
+.actions--bottom {
+  margin-top: var(--gap-xl);
+}
+
+.divider {
+  height: 2px;
+  background: var(--line);
+  border: 0;
+  margin: var(--gap-lg) 0;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-sm);
+  text-align: center;
+  padding: var(--gap-xl) var(--gap);
+  color: var(--ink-soft);
+}
+
+.empty-state__title {
+  font-size: var(--text-section);
+  color: var(--ink);
+}
+
+/* --- Tela de entrada --------------------------------------------------------- */
+
+.login {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__head {
+  padding: var(--gap-lg) var(--gap) 0;
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.login__body {
+  flex: 1;
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--gap-lg) var(--gap) var(--gap-xl);
+}
+
+.login__name-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.pin-display {
+  display: flex;
+  gap: var(--gap-sm);
+  justify-content: center;
+  margin: var(--gap-lg) 0;
+}
+
+.pin-display__slot {
+  width: 3.25rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.pin-display__slot--filled {
+  border-color: var(--brand-strong);
+  background: var(--brand-soft);
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-sm);
+}
+
+.keypad__key {
+  min-height: 4.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1.875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .keypad__key:hover {
+    background: var(--brand-soft);
+  }
+}
+
+/* O zero fica no meio da ultima linha, como no teclado do telefone. */
+.keypad__key--middle {
+  grid-column: 2;
+}
+
+/* --- Seletor de idioma ------------------------------------------------------- */
+
+.language-picker {
+  display: flex;
+  gap: var(--gap-xs);
+  flex-wrap: wrap;
+}
+
+.language-picker__option {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xs);
+  min-height: var(--touch-min);
+  padding: 0.5rem var(--gap);
+  border: 2px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: var(--text-small);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-picker__option[aria-pressed="true"] {
+  border-color: var(--brand-strong);
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+}
+
+.language-picker--full .language-picker__option {
+  width: 100%;
+  min-height: var(--action-height);
+  font-size: var(--text-action);
+  justify-content: space-between;
+}
+
+/* --- Abas do painel do gestor ------------------------------------------------ */
+
+.tabs {
+  display: flex;
+  gap: var(--gap-xs);
+  overflow-x: auto;
+  padding-bottom: var(--gap-xs);
+  margin-bottom: var(--gap);
+  scrollbar-width: thin;
+}
+
+.tabs__tab {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  min-height: var(--touch-min);
+  padding: 0.5rem var(--gap);
+  border: 2px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: var(--text-small);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tabs__tab[aria-current="page"] {
+  background: var(--brand);
+  border-color: var(--brand-strong);
+  color: #ffffff;
+}
+
+/* --- Dialogo de confirmacao -------------------------------------------------- */
+
+.dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(6, 14, 24, 0.62);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: var(--gap);
+  padding-bottom: calc(var(--gap) + env(safe-area-inset-bottom));
+}
+
+.dialog {
+  width: 100%;
+  max-width: 32rem;
+  background: var(--surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-raised);
+  padding: var(--gap-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  max-height: 92vh;
+  max-height: 92dvh;
+  overflow-y: auto;
+}
+
+.dialog__title {
+  font-size: var(--text-title);
+}
+
+.dialog__text {
+  font-size: var(--text-body);
+  color: var(--ink);
+}
+
+/* --- Lista de historico ------------------------------------------------------ */
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.history__item {
+  display: flex;
+  gap: var(--gap-sm);
+  align-items: flex-start;
+  font-size: var(--text-small);
+}
+
+.history__icon {
+  flex-shrink: 0;
+  color: var(--brand-strong);
+  margin-top: 0.15rem;
+}
+
+.history__time {
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Ajustes que a pessoa faz ------------------------------------------------ */
+
+.mono-time {
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Telas estreitas --------------------------------------------------------- */
+
+@media (max-width: 22rem) {
+  /* Em aparelhos muito estreitos as duas opcoes ficam uma embaixo da outra. */
+  .choice-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .pin-display__slot {
+    width: 2.75rem;
+  }
+}
+
+/* --- Reduzir movimento ------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .btn:active {
+    transform: none;
+  }
+}
+
+/* --- Mais contraste, se a pessoa pediu no aparelho -------------------------- */
+
+@media (prefers-contrast: more) {
+  :root {
+    --ink-soft: #2b3644;
+    --line: #7d8a99;
+    --line-strong: #38434f;
+  }
+
+  .card,
+  .choice,
+  .person-row {
+    border-width: 2px;
+  }
+}
+
+@media print {
+  .topbar,
+  .bottom-nav,
+  .btn {
+    display: none;
+  }
+}
